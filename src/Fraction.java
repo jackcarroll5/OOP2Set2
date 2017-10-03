@@ -43,24 +43,44 @@ public class Fraction {
       return getNumerator() + "/" + getDenominator();
     }
 
-    public static int add(int numerator,int denominator)
+    public static Fraction add(Fraction f1,Fraction f2)
     {
-       return numerator/denominator + 10/20;
+        int numerator = f1.getNumerator() + f2.getNumerator();
+        int denominator = f1.getDenominator() + f2.getDenominator();
+
+        Fraction ans = new Fraction(numerator,denominator);
+
+        return ans;
     }
 
-    public static int subtract(int numerator,int denominator)
+    public static Fraction subtract(Fraction f1,Fraction f2)
     {
-        return numerator/denominator - 10/20;
+        int numerator = f1.getNumerator() - f2.getNumerator();
+        int denominator = f1.getDenominator() - f2.getDenominator();
+
+        Fraction ans = new Fraction(numerator,denominator);
+
+        return ans;
     }
 
-    public static int multiply(int numerator,int denominator)
+    public static Fraction multiply(Fraction f1,Fraction f2)
     {
-        return (numerator/denominator * 10/20);
+        int numerator = f1.getNumerator() * f2.getNumerator();
+        int denominator = f1.getDenominator() * f2.getDenominator();
+                                                                               //fi.multiply(f2);
+        Fraction ans = new Fraction(numerator,denominator);
+
+        return ans;
     }
 
-    public static int divide(int numerator,int denominator)
+    public static Fraction divide(Fraction f1,Fraction f2)
     {
-        return (numerator/denominator / 10/20);
+        int numerator = f1.getNumerator() / f2.getNumerator();
+        int denominator = f1.getDenominator() / f2.getDenominator();
+
+        Fraction ans = new Fraction(numerator,denominator);
+
+        return ans;
     }
 
 }

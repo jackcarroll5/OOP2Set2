@@ -69,10 +69,19 @@ public class Animal {
 
     public String toString()
     {
-       return getType() + " " + getContinents() + " " + getWeight() + " " + getAge();
+        String returning = "";
+
+        if(continents != null)
+        {
+            for (int i = 1; i < continents.length; i++) {
+                if (continents[i] != null) {
+                    returning += " " + continents[i] + ",";
+                }
+
+            }
+        }
+
+       return String.format("\nName: %-20s  \nContinents: %-20s \nWeight: %5.2f \nAge: %-4d",getType(),returning,getWeight(),getAge());
     }
-
-
-
 
 }

@@ -8,9 +8,9 @@ public class Bicycle {
 
     public Bicycle()
     {
-     setOwner("");
+     setOwner("No name");
      setValue(0);
-     setMake("");
+     setMake("No make");
     }
 
 
@@ -28,7 +28,7 @@ public class Bicycle {
 
    public void setValue(float value)
    {
-       this.owner = owner;
+       this.value = value;
    }
 
    public void setMake(String make)
@@ -52,10 +52,9 @@ public class Bicycle {
     }
 
 
-
     public String toString()
     {
-      return getOwner() + "\n" + getValue() + "\n" + getMake();
+      return "\nOwner: " + getOwner() + "\nValue: " + getValue() + "\nMake: " + getMake();
     }
 
 }
