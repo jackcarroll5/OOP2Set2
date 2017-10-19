@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Problem6 {
     public static void main(String[] args) {
-            int numerator = 0,denominator = 0;
 
         Scanner input = new Scanner(System.in);
 
@@ -17,7 +16,7 @@ public class Problem6 {
 
         Fraction fraction3 = new Fraction(10,20);
 
-        System.out.println("Value of " + fraction2 + " + " + fraction3 + " is " + Fraction.add(fraction2,fraction3));
+        System.out.println("\nValue of " + fraction2 + " + " + fraction3 + " is " + Fraction.add(fraction2,fraction3));
 
         System.out.println("Value of " + fraction2 + " - " + fraction3 + " is " + Fraction.subtract(fraction2,fraction3));
 

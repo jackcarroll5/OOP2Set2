@@ -8,9 +8,9 @@ public class Message {
 
     public Message()
     {
-        setSender("");
-        setRecipient("");
-        setMessage("");
+        setSender("No Sender");
+        setRecipient("No Recipient");
+        setMessage("No Message");
     }
 
     public Message(String sender, String recipient,String message)
@@ -54,8 +54,14 @@ public class Message {
 
     public String toString()
     {
-        return String.format("Sender: %-30s  \nRecipient: %-30s \nMessage: %-30s",getSender(),
+        return String.format("From: %-30s  \nTo: %-30s \nMessage: %-30s",getSender(),
                 getRecipient(),getMessage());
+    }
+
+    public String append()
+    {
+
+        return "";
     }
 
 

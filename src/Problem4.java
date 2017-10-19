@@ -22,6 +22,9 @@ public class Problem4 {
         System.out.println("\nThe new point for Point 1 is: " + value1);
 
 
+        value2.translate(3,5);
+        System.out.println("\nThe translated point for Point 2 is: " + value2);
+
         distance = value2.distanceFromOrigin(value2.getxVal(),value2.getyVal());
          System.out.println("\nThe distance from the origin is: " + distance);
 

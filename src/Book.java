@@ -77,7 +77,7 @@ public class Book {
 
     public String toString()
     {
-      return String.format("%-20s%-20.2f%-20s%-20d",getTitle(),getPrice(),getIsbn(),getNoPages());
+      return String.format("Title:%-20s Price:€%-20.2f ISBN:%-20s No of Pages:%-20d",getTitle(),getPrice(),getIsbn(),getNoPages());
 
     }
 }

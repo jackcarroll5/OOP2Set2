@@ -44,14 +44,12 @@ public class MyPoint {
     public double moveHorizontally(double xVal)
     {
         this.xVal += xVal;
-
         return this.xVal;
     }
 
     public double moveVertically(double yVal)
     {
         this.yVal += yVal;
-
         return this.yVal;
     }
 
@@ -69,5 +67,4 @@ public class MyPoint {
 
       return distance;
     }
-
 }

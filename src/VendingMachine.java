@@ -1,10 +1,8 @@
 /*This class will set up the cans and tokens for a vending machine*/
 
 public class VendingMachine {
-
     private int cans;
     private int tokens;
-
 
     public VendingMachine()
     {
